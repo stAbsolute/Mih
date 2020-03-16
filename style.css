@@ -1,0 +1,93 @@
+*{LiveReload: Enable/disable plugins
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none; 
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	width: 100%
+	background; #000;
+	display: flex;
+}
+.header__logo{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	font-size: 24px;
+	cursor: pointer;
+	margin-left: 15%;
+}
+nav{
+	margin-top: 42px;
+	margin-left: 12%;
+}
+.topnav a{
+	color: #AAA;
+	text-align: center;
+	padding: 12px 35px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.topnav a:hover{
+	background: #E81;
+	border-radius: 7px 7px 7px 7px;
+	color: #fff;
+}
+.topnav .icon{
+	display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+	nav{
+		margin-left: 20%;
+	}
+}
+@media screen and (max-width: 1105px) {
+	nav{
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 1010px){
+	.topnav a{
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: #AAA;
+		font-size: 25px;
+	}
+	nav{
+		width: 100%;
+
+	}
+	.topnav.responsive{
+		position: relative;
+		top: 50px;
+		left: -200px;
+	}
+	header .topnav.responsive{
+		height: 340px;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
